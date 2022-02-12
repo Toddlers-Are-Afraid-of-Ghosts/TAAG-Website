@@ -12,21 +12,26 @@
     background-image: url(banner.png);
     background-position: center;
     background-size: cover;
-    position: relative;
+    position: top;
 }
 
 /*caractéristiques générales des catégories sommaire*/
 nav{
+    margin-left: 10%;
     display: flex;
-    padding: 3% 6%;
+    padding: 1% 6%;
     justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 5%;
     align-items: center;
 }
 
 /*position du sommaire*/
 nav img{
-    width: 150px;
+    margin-top: 2%;
+    width: 300px;
 }
+
 .nav-links{
     flex: 1;
     text-align: right;
@@ -65,9 +70,22 @@ nav img{
     margin-top: 2%;
     text-align:justify;
 }
-
-/*couleur de fond du site*/
-.headbis{
-    background-color: rgb(240, 240, 240);
+.body{
+    background-color: rgb(216, 216, 216);
 }
 
+/*police des titres*/
+h2{
+    font-family: 'Anton', sans-serif;
+}
+/*bas de page*/
+footer{
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.text img{
+    width: 10%;
+}
