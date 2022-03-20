@@ -1,82 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
-        <meta name="viemport" content="with=device-width, initial-scale=1.0">
-        <title>
-            Toddlers Are Afraid Of Ghosts
-        </title>
-        <link rel="stylesheet" href="web site.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+        <meta charset="UTF-8"/>
+        <meta name="viemport" content="with=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css">
+        <title>Toddlers Are Afraid of Ghosts</title>
     </head>
     <body>
-        <section class="headbis">
+        <header>
+            <div id="name"><a href="index.html" >Toddlers Are Afraid of Ghosts</a></div>
             <nav>
-                <!--logo cliquable pour revenir sur l'accueil-->
-                <a href="index.html"><img src="nom_site_web.png" alt="nom du site"/></a>
-            <div class="nav-links">
-                <ul>
-                    <!--sommaire-->
-                    <li><a href="index.html">ACCUEIL</a></li>
-                    <li><a href="jeu.html">LE JEU</a></li>
-                    <li><a href="presentation.html">A PROPOS DE NOUS</a></li>
-                    <li><a href="projet.html">LE PROJET</a></li>
+              <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="jeu.html">Le jeu</a></li>
+                  <li><a href="presentation.html">A propos de nous</a></li>
+                  <li><a href="projet.html">Le projet</a></li>
+              </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="jeu.html">Le jeu</a></li>
+                    <li><a href="presentation.html">A propos de nous</a></li>
+                    <li><a href="projet.html">Le projet</a></li>
                 </ul>
             </div>
-            </nav>
-            <!--texte-->
-            <div class="text">
-                <h2> Thomas "VALI" Solatges </h2>
-                <br>
-                <h3>Aussi connu sous le nom de « VALI » (non, ça n’a rien à voir avec Valentin, il faut arrêter de me poser cette question, merci),
-                    je suis passionné par les jeux vidéo depuis ma première DS et la découverte de Pokémon. Depuis, je ne cesse d’être émerveillé par 
-                    les technologies développées chaque année, et qui ne limitent les créateurs qu’à leur imagination. Je suis de nature assez tranquille, 
-                    bien que certaines activités brisent cette tendance. J’ai un esprit compétitif, et je prends très à cœur le défi, c’est d’ailleurs 
-                    ma principale source de sel (et ne vous en faites pas, c’est du bon). Je suis aussi un gros fan de musique électronique, dont je me 
-                    limite dans l’écoute, car j’ai un minimum de respect pour ce genre. Armé de Buck la Belette et de beaucoup de patience (je me suis 
-                    quand même infligé 300 heures de The Binding of Isaac), je compte bien faire de ce projet une réussite.
+         </header>
+         <script src="index.js"></script>
+         <!--texte-->
+         <div class="text">
+            <h2> Thomas "VALI" Solatges </h2>
+            <br>
+            <h3>Aussi connu sous le nom de « VALI » (non, ça n’a rien à voir avec Valentin, il faut arrêter de me poser cette question, merci),
+                je suis passionné par les jeux vidéo depuis ma première DS et la découverte de Pokémon. Depuis, je ne cesse d’être émerveillé par 
+                les technologies développées chaque année, et qui ne limitent les créateurs qu’à leur imagination. Je suis de nature assez tranquille, 
+                bien que certaines activités brisent cette tendance. J’ai un esprit compétitif, et je prends très à cœur le défi, c’est d’ailleurs 
+                ma principale source de sel (et ne vous en faites pas, c’est du bon). Je suis aussi un gros fan de musique électronique, dont je me 
+                limite dans l’écoute, car j’ai un minimum de respect pour ce genre. Armé de Buck la Belette et de beaucoup de patience (je me suis 
+                quand même infligé 300 heures de The Binding of Isaac), je compte bien faire de ce projet une réussite.
+            </h3>
+            <br><br>
+             <h2>Arnaud "Arnoloh" Corcione</h2>
+             <br>
+             <h3>De mon appellation « Arnoloh » ou Arno, pour les intimes, je suis un grand fan de jeux vidéo ainsi que de programmation, d’où ma 
+                 présence à l’EPITA. Mon plus grand trait de personnalité est certainement ma folie constante. J’ai le rire facile, et pour moi, rien 
+                 ne vaut plus qu’une bonne blague. La joie et la bonne humeur sont des choses très importantes. Les jeux vidéo m’ont bercé depuis que 
+                 je suis minot. Alors, en réaliser un est quelque chose d’évident pour moi. Surtout que j’ai eu la chance de faire le jeu « Pong » en 
+                 JavaScript. Depuis, mon goût pour la programmation et les jeux vidéo n’a cessé d’augmenter chaque jour.La musique est aussi quelque 
+                 chose d’essentiel dans mon quotidien. C’est pourquoi, j’adore faire du bruit ou jouer du ukulélé, un instrument que mes camarades 
+                 n’auront pas fini d’entendre.De plus, niveau programmation, je me suis aussi penché sur le coding d’un bot discord, qui n’est certes 
+                 plus d’actualité mais il s’appelait Robert ! C’est pourquoi Attilio, mon Rubber Ducky, et moi, sommes plus que motivés pour ce projet.
                 </h3>
                 <br><br>
-                 <h2>Arnaud "Arnoloh" Corcione</h2>
-                 <br>
-                 <h3>De mon appellation « Arnoloh » ou Arno, pour les intimes, je suis un grand fan de jeux vidéo ainsi que de programmation, d’où ma 
-                     présence à l’EPITA. Mon plus grand trait de personnalité est certainement ma folie constante. J’ai le rire facile, et pour moi, rien 
-                     ne vaut plus qu’une bonne blague. La joie et la bonne humeur sont des choses très importantes. Les jeux vidéo m’ont bercé depuis que 
-                     je suis minot. Alors, en réaliser un est quelque chose d’évident pour moi. Surtout que j’ai eu la chance de faire le jeu « Pong » en 
-                     JavaScript. Depuis, mon goût pour la programmation et les jeux vidéo n’a cessé d’augmenter chaque jour.La musique est aussi quelque 
-                     chose d’essentiel dans mon quotidien. C’est pourquoi, j’adore faire du bruit ou jouer du ukulélé, un instrument que mes camarades 
-                     n’auront pas fini d’entendre.De plus, niveau programmation, je me suis aussi penché sur le coding d’un bot discord, qui n’est certes 
-                     plus d’actualité mais il s’appelait Robert ! C’est pourquoi Attilio, mon Rubber Ducky, et moi, sommes plus que motivés pour ce projet.
-                    </h3>
-                    <br><br>
-                    <h2>Axelle "Lunarya" Destombes</h2>
-                    <h3>   
-                    <br>               
-                    Bonjour ! Je suis Axelle, Lunarya ou bien Luna (rien d’original, seulement mon deuxième prénom ;) ). Passionnée de jeux vidéos, de lecture 
-                    et de musique depuis mon enfance, je suis extrêmement enthousiaste à l’idée de participer à ce projet.Depuis quelques années, la programmation 
-                    occupe une quantité importante de mon temps. Il m’est plusieurs fois arrivé de créer des outils qui me sont par exemple utiles pour optimiser 
-                    mon farm dans certains des jeux auxquels je joue. Certes, pour toute autre personne, ces outils seraient probablement inutiles, mais j’aime bien 
-                    programmer, d’autant plus lorsque cela inclut un autre de mes centres d’intérêt. De nature plutôt calme et posée, il semblerait que je sois toute 
-                    désignée pour devenir la "maman" de ce groupe. J’ai hâte de passer de merveilleux moments avec mes trois camarades. Les prochains mois vont certainement
-                    être remplis de bonne humeur, de rires et de fatigue. Je n’ai cependant aucun doute sur notre capacité à réaliser ceprojet qui nous tient tous à cœur.
-                    </h3>
-                    <br><br>
-                    <h2>Gwennan "Liberty" Jarno</h2>
-                    <br>
-                    <h3>
-                      Connue sous le pseudonyme de « Liberty » pour les uns et « Gwen » pour les autres, ces petits noms risquent de changer incessamment sous peu du fait de 
-                      mon envie d’avoir moi aussi un nom stylé. Complète débutante dans tout ce qui touche aux jeux vidéos, j’adore explorer et créer de nouvelles choses. Je 
-                      serai visiblement la prof de français de ce groupe ainsi que la dessinatrice. Au fur et à mesure que j’apprends à connaître mes compatriotes de projet, 
-                      je dois avouer que j’ai de plus en plus de doutes sur la "santé mentale" de notre futur projet. Je serai sûrement aussi le petit Schroumpf du groupe, qui
-                    s’amusera à bien embêter ses camarades aussi peu sérieux qu’elle. Mais, en dépit de cette présentation quelque peu non sérieuse, je peux vous assurer de ma 
-                    motivation et de mon envie de réaliser et faire aboutir ce projet.
-                    <br><br><br><br><br>
+                <h2>Axelle "Lunarya" Destombes</h2>
+                <h3>   
+                <br>               
+                Bonjour ! Je suis Axelle, Lunarya ou bien Luna (rien d’original, seulement mon deuxième prénom ;) ). Passionnée de jeux vidéos, de lecture 
+                et de musique depuis mon enfance, je suis extrêmement enthousiaste à l’idée de participer à ce projet.Depuis quelques années, la programmation 
+                occupe une quantité importante de mon temps. Il m’est plusieurs fois arrivé de créer des outils qui me sont par exemple utiles pour optimiser 
+                mon farm dans certains des jeux auxquels je joue. Certes, pour toute autre personne, ces outils seraient probablement inutiles, mais j’aime bien 
+                programmer, d’autant plus lorsque cela inclut un autre de mes centres d’intérêt. De nature plutôt calme et posée, il semblerait que je sois toute 
+                désignée pour devenir la "maman" de ce groupe. J’ai hâte de passer de merveilleux moments avec mes trois camarades. Les prochains mois vont certainement
+                être remplis de bonne humeur, de rires et de fatigue. Je n’ai cependant aucun doute sur notre capacité à réaliser ceprojet qui nous tient tous à cœur.
                 </h3>
-            </div>
-            </section>
+                <br><br>
+                <h2>Gwennan "Liberty" Jarno</h2>
+                <br>
+                <h3>
+                  Connue sous le pseudonyme de « Liberty » pour les uns et « Gwen » pour les autres, ces petits noms risquent de changer incessamment sous peu du fait de 
+                  mon envie d’avoir moi aussi un nom stylé. Complète débutante dans tout ce qui touche aux jeux vidéos, j’adore explorer et créer de nouvelles choses. Je 
+                  serai visiblement la prof de français de ce groupe ainsi que la dessinatrice. Au fur et à mesure que j’apprends à connaître mes compatriotes de projet, 
+                  je dois avouer que j’ai de plus en plus de doutes sur la "santé mentale" de notre futur projet. Je serai sûrement aussi le petit Schroumpf du groupe, qui
+                s’amusera à bien embêter ses camarades aussi peu sérieux qu’elle. Mais, en dépit de cette présentation quelque peu non sérieuse, je peux vous assurer de ma 
+                motivation et de mon envie de réaliser et faire aboutir ce projet.
+                <br><br><br>
+            </h3>
+        </div>
     </body>
     <footer>
         <h6>2022 | Copyright | Toddlers Are Afraid of Ghosts, Tous droits réservés</h6>
     </footer>
-</html>
+    </html>

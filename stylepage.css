@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    color: rgb(0, 0, 0);
+    background-color:#73A6B8;
+    background-image: url(banner.png);
+    background-size: 100%;
+    background-attachment:fixed;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header {
+    padding: 0 20px;
+    background-color:#73A6B8;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+#name {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-family: 'Knewave', cursive;;
+}
+  
+#name a {
+    color: black;
+}
+
+ul {
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+ul a {
+    color:black;
+}
+  
+ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+  
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+  
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+  
+.open .bar2 {
+    opacity: 0;
+}
+  
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+  
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+  
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+header nav {
+    display: none;
+}
+  
+#hamburger-icon {
+    display: block;
+}
+}
+
+.text{
+    font-family:'PT Sans', sans-serif; 
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    text-align:justify;
+}
+
+h2{
+    font-weight: bold;
+}
+.text img{
+    width: 10%;
+}
+
+footer{
+    position:fixed;
+    left:20px;
+    bottom:15px;  /* on le colle en bas */
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+}

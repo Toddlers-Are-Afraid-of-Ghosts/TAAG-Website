@@ -1,85 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
-        <meta name="viemport" content="with=device-width, initial-scale=1.0">
-        <title>
-            Toddlers Are Afraid Of Ghosts
-        </title>
-        <link rel="stylesheet" href="web site.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+        <meta charset="UTF-8"/>
+        <meta name="viemport" content="with=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css">
+        <title>Toddlers Are Afraid of Ghosts</title>
     </head>
     <body>
-        <section class="headbis">
-            <!--logo cliquable pour revenir sur l'accueil-->
+        <header>
+            <div id="name"><a href="index.html" >Toddlers Are Afraid of Ghosts</a></div>
             <nav>
-                <a href="index.html"><img src="nom_site_web.png" alt="nom du site"/></a>
-            <div class="nav-links">
-                <ul>
-                     <!--sommaire-->
-                    <li><a href="index.html">ACCUEIL</a></li>
-                    <li><a href="jeu.html">LE JEU</a></li>
-                    <li><a href="presentation.html">A PROPOS DE NOUS</a></li>
-                    <li><a href="projet.html">LE PROJET</a></li>
+              <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="jeu.html">Le jeu</a></li>
+                  <li><a href="presentation.html">A propos de nous</a></li>
+                  <li><a href="projet.html">Le projet</a></li>
+              </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="jeu.html">Le jeu</a></li>
+                    <li><a href="presentation.html">A propos de nous</a></li>
+                    <li><a href="projet.html">Le projet</a></li>
                 </ul>
             </div>
-            </nav>
-            <!--texte-->
-            <div class="text">
-                <h2> Idée orginale du jeu: </h2>
-                <br>
-                <h3>La création d’un jeu vidéo fut une envie commune dans le groupe. L’idée d’un jeu semblable à The Binding of Isaac est ensuite apparue 
-                    comme une évidence au sein du groupe.Toddlers Are Afraid est donc un jeu de type roguelike. Le joueur affronte des monstres et parcourt 
-                    des niveaux générés de façon procédurale. À chaque fois qu’il perd une partie, le joueur doit recommencer depuis le début dans une nouvelle, 
-                    sans aucun inventaire.
-                </h3>
-                <br><br>
-                 <h2>Cahier des charges:</h2>
-                 <br>
-                 <iframe id="iframepdf" width="100%" height="1000cm" src="Cahier_des_charges.pdf"></iframe>
-                 <br>
-                 <br>
-                 <a href="Cahier_des_charges.pdf">Cliquer ici pour télécharger le pdf</a>  
-                 <br><br><br>
-                 <h2>Chronologie de l'avancement du projet:</h2><br>
-                 <h3>Bilan de l'avancement du projet avant la première soutenance (le 9 mars 2022):</h3>
-                 <br>
-                 <iframe id="iframepdf" width="100%" height="1000cm" src="rapportsoutenance1.pdf"></iframe>
-                 <br>
-                 <br>
-                 <a href="rapportsoutenance1.pdf">Cliquer ici pour télécharger le pdf</a>  
-                 <br><br>
-                 <h3>Bilan de l'avancement du projet avant la deuxième soutenance (date indéterminée):</h3>
-                 <h4>Bilan temporairement indisponible</h4>
-                 <br><br>
-                 <h3>Bilan de l'avancement du projet avant la soutenance finale (date indéterminée):</h3>
-                 <h4>Bilan temporairement indisponible</h4>
-                 <br><br><br>
-                 <h2>Logiciels utilisés:</h2>
-                 <br><br>
-                 <h3><a href="https://discord.com/" target="_blank">Discord</a> - Application de communication</h3>
-                 <br>
-                 <h3><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> - Editeur de code </h3>
-                 <br>
-                 <h3><a href="https://unity.com/fr" target="_blank">Unity</a> - Moteur de jeu</h3>
-                 <br>
-                 <h3><a href="https://www.sketchbook.com/" target="_blank">Sketchbook</a> - Logiciel de dessin</h3>
-                 <br>
-                 <h3><a href="https://www.adobe.com/fr/products/photoshop.html" target="_blank">Photoshop</a> - Logiciel de retouche</h3>
-                 <br>
-                 <h3><a href="https://fr.overleaf.com/" target="_blank">Overleaf</a> - Editeur LaTeX en ligne</h3>
-                 <br>
-                 <h3><a href="https://git-scm.com/" target="_blank">Git</a> - Logiciel de gestion</h3>
-                 <br>
-                 <h3><a href="https://github.com/" target="_blank">GitHub</a> - Logiciel de gestion</h3>
-                 <br>
-                 <h3><a href="https://www.gitkraken.com/" target="_blank">Git Kraken</a> - Extension de Git</h3>
-                 <br><br><br><br><br>              
-            </div>
-            </section>
+         </header>
+         <script src="index.js"></script>
+         <!--texte-->
+         <div class="text">
+            <h2> Idée orginale du jeu: </h2>
+            <br>
+            <h3>La création d’un jeu vidéo fut une envie commune dans le groupe. L’idée d’un jeu semblable à The Binding of Isaac est ensuite apparue 
+                comme une évidence au sein du groupe.Toddlers Are Afraid est donc un jeu de type roguelike. Le joueur affronte des monstres et parcourt 
+                des niveaux générés de façon procédurale. À chaque fois qu’il perd une partie, le joueur doit recommencer depuis le début dans une nouvelle, 
+                sans aucun inventaire.
+            </h3>
+            <br><br>
+             <h2>Cahier des charges:</h2>
+             <br>
+             <iframe id="iframepdf" width="100%" height="1000cm" src="Cahier_des_charges.pdf"></iframe>
+             <br>
+             <br>
+             <a href="Cahier_des_charges.pdf"><img src="pdf-icon-png-2082.png"/></a>  
+             <br><br><br>
+             <h2>Chronologie de l'avancement du projet:</h2><br>
+             <h3>Bilan de l'avancement du projet avant la première soutenance (le 9 mars 2022):</h3>
+             <br>
+             <iframe id="iframepdf" width="100%" height="1000cm" src="rapportsoutenance1.pdf"></iframe>
+             <br>
+             <br>
+             <a href="rapportsoutenance1.pdf"><img src="pdf-icon-png-2082.png"/></a>  
+             <br><br><br>
+             <h3>Bilan de l'avancement du projet avant la deuxième soutenance (date indéterminée):</h3>
+             <h4>Bilan temporairement indisponible</h4>
+             <br><br>
+             <h3>Bilan de l'avancement du projet avant la soutenance finale (date indéterminée):</h3>
+             <h4>Bilan temporairement indisponible</h4>
+             <br><br><br>
+             <h2>Logiciels utilisés:</h2>
+             <br>
+             <h3><a href="https://discord.com/" target="_blank">Discord</a> - Application de communication</h3>
+             <br>
+             <h3><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> - Editeur de code </h3>
+             <br>
+             <h3><a href="https://unity.com/fr" target="_blank">Unity</a> - Moteur de jeu</h3>
+             <br>
+             <h3><a href="https://www.sketchbook.com/" target="_blank">Sketchbook</a> - Logiciel de dessin</h3>
+             <br>
+             <h3><a href="https://www.adobe.com/fr/products/photoshop.html" target="_blank">Photoshop</a> - Logiciel de retouche</h3>
+             <br>
+             <h3><a href="https://fr.overleaf.com/" target="_blank">Overleaf</a> - Editeur LaTeX en ligne</h3>
+             <br>
+             <h3><a href="https://git-scm.com/" target="_blank">Git</a> - Logiciel de gestion</h3>
+             <br>
+             <h3><a href="https://github.com/" target="_blank">GitHub</a> - Logiciel de gestion</h3>
+             <br>
+             <h3><a href="https://www.gitkraken.com/" target="_blank">Git Kraken</a> - Extension de Git</h3>
+             <br><br><br>              
+        </div>
     </body>
     <footer>
         <h6>2022 | Copyright | Toddlers Are Afraid of Ghosts, Tous droits réservés</h6>
     </footer>
-</html>
+    </html>
