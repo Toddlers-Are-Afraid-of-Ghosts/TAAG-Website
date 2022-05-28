@@ -14,7 +14,7 @@ app.use(express.json({ extended: true }));
 app.use(express.static("."));
 
 app.post('/api/pull', (req, res) => {
-    res.send(202)
+    res.sendStatus(202)
     exec('git pull ', (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
