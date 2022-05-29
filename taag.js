@@ -5,13 +5,10 @@ const fs = require('fs');
 const server = http.createServer(app);
 const { exec } = require("child_process");
 
-const PORT = 13069
+const PORT = 13068
 server.listen(PORT, () => {
     console.log(`Listening on port: ${PORT}`)
 });
-
-app.use(express.json({ extended: true }));
-app.use(express.static("."));
 
 app.post('/api/pull', (req, res) => {
     res.sendStatus(202)
