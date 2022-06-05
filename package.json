@@ -1,0 +1,22 @@
+{
+  "name": "taag-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "taag.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toddlers-Are-Afraid-of-Ghosts/TAAG-Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Toddlers-Are-Afraid-of-Ghosts/TAAG-Website/issues"
+  },
+  "homepage": "https://github.com/Toddlers-Are-Afraid-of-Ghosts/TAAG-Website#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
